@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 
 public class JoinView extends Frame implements WindowListener, ActionListener{
 	JButton joinBtn;
+	JButton checkId;
 	
 	public JoinView() {
 	
@@ -61,9 +62,17 @@ public class JoinView extends Frame implements WindowListener, ActionListener{
 			p[i+1].add(txt[i]);
 		}
 		
+		// 아이디중복 찾기 버튼 
+		checkId = new JButton("중복검사");
+		checkId.setBounds(360, 30, 80, 30);
+		checkId.addActionListener(this);
+		p[1].add(checkId);
 		
-		 joinBtn = new JButton("회 원 가 입 ");
+		
+		
+		joinBtn = new JButton("회 원 가 입 ");
 		joinBtn.setBounds(150, 10, 180, 50);
+		joinBtn.addActionListener(this);
 		p[5].add(joinBtn);
 	
 		
@@ -121,8 +130,11 @@ public class JoinView extends Frame implements WindowListener, ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JButton nowBtn = (JButton)e.getSource();
-		if(nowBtn ==  joinBtn) {
+		if(nowBtn ==  joinBtn) { // 회원가입 버튼 
 			
+		}
+		else if ( nowBtn == checkId) {
+			// 아이디 중복찾기 버튼 
 		}
 		
 		
