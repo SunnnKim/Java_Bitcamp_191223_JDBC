@@ -114,6 +114,7 @@ public class LoginView extends Frame implements WindowListener, ActionListener {
 		if(nowBtn == login) {
 			// 로그인 버튼 누르기
 			
+			
 		}
 		else if( nowBtn == join) {
 			

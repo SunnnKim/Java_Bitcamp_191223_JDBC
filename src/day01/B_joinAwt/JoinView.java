@@ -64,7 +64,7 @@ public class JoinView extends Frame implements WindowListener, ActionListener{
 		
 		// 아이디중복 찾기 버튼 
 		checkId = new JButton("중복검사");
-		checkId.setBounds(360, 30, 80, 30);
+		checkId.setBounds(360, 30, 90, 30);
 		checkId.addActionListener(this);
 		p[1].add(checkId);
 		
@@ -77,7 +77,7 @@ public class JoinView extends Frame implements WindowListener, ActionListener{
 	
 		
 		
-		setBounds(100, 100, 450, 540);
+		setBounds(100, 100, 500, 540);
 		setVisible(true);
 		addWindowListener(this);
 		
